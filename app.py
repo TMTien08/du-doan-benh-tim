@@ -16,9 +16,8 @@ st.set_page_config(page_title="Dự đoán Bệnh Tim", page_icon="❤️", layo
 title_col, img_col = st.columns([3, 1])
 with title_col:
     st.markdown("<h1 style='text-align: center; color: red;'>Dự đoán Bệnh Tim</h1>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align: center; color: red;'>Ăn hôi: vinh</h1>", unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align: center; color: red;'>nhóm bác sĩ: Mr.Tien, Mr.PNam, Mr.Huy</h2>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; color: red;'>trưởng khoa: ĐH Nam</h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: red;'>Group of doctors: Mr.Tien, Mr.PNam, Mr.Huy, Mr.HNam</h4>", unsafe_allow_html=True)
+
 with img_col:
     st.image("https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-trai-tim.jpg", width=150)
 
