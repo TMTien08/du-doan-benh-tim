@@ -17,7 +17,7 @@ title_col, img_col = st.columns([3, 1])
 with title_col:
     st.markdown("<h1 style='text-align: center; color: red;'>Dự đoán Bệnh Tim</h1>", unsafe_allow_html=True)
 with img_col:
-    st.image(Image.open("https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-trai-tim.jpg"), width=80)
+    st.image("https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-trai-tim.jpg", width=150)
 
 st.markdown("---")
 
