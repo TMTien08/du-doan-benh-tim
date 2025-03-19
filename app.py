@@ -6,8 +6,16 @@ import tensorflow as tf
 from PIL import Image
 
 # Load mô hình và scaler
-model = tf.keras.models.load_model("heart_disease_model.keras")
-scaler = joblib.load("scaler.pkl")
+@st.cache_resource
+def load_model():
+    return tf.keras.models.load_model("heart_disease_model.keras")
+
+@st.cache_resource
+def load_scaler():
+    return joblib.load("scaler.pkl")
+
+model = load_model()
+scaler = load_scaler()
 
 # Thiết lập giao diện
 st.set_page_config(page_title="Dự đoán Bệnh Tim", page_icon="❤️", layout="centered")
